@@ -115,7 +115,6 @@ def prediksi():
                 mapping[taman], mapping[keamanan_24_jam], mapping[taman_bermain_anak]
             ]
             features = [[kamar_tidur, bangunan, lahan, kamar_mandi,latitude,longitude ] + fasilitas]
-            # predict_house1 = round(model_prediksi.predict(features)[0])
             predict_house1 = model_prediksi.predict(features)
             prediction = np.expm1(predict_house1)
         st.subheader('Prediksi Harga Rumah : ')
