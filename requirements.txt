@@ -1,2 +1,4 @@
 scikit-learn == 1.2.2
-matplotlib 
+pandas
+matplotlib
+streamlit
