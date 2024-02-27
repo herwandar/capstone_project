@@ -6,6 +6,7 @@ import altair as alt
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import sklearn
 
 df = pd.read_csv('data/jogja_fix____.csv')
 df.dropna()
