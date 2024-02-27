@@ -328,7 +328,7 @@ def analisa_data():
 def kesimpulan_data():
     with st.container():
         st.subheader('Kesimpulan')
-        st.write("""Harga rumah juga ditentukan dengan beberapa faktor lainya selain luas lahan,luas bangunan,jumlah kamar tidur,dan kota 
+        st.write("""Harga rumah juga ditentukan dengan beberapa faktor lainya selain luas lahan,luas bangunan,jumlah kamar tidur,jumlah kamar mandi, dan kota 
                  mengutip dari [aesia](https://aesia.kemenkeu.go.id/berita-properti/properti/5-faktor-yang-mempengaruhi-harga-jual-rumah-98.html) ada 5 faktor yang mempengaruhi harga rumah :""")
         st.write("""1. Lokasi Rumah""")
         st.write("""Seperti yang sudah dijelaskan sebelumnya, lokasi merupakan faktor utama yang mempengaruhi nilai dan harga jual rumah. Lokasi meliputi lingkungan di sekitar rumah secara fisik maupun sosial.
