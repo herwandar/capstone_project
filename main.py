@@ -344,7 +344,7 @@ def kesimpulan_data():
         
         st.subheader('Tentang Project')
         st.write("""Pengumpulan data dilakukan dengan metode web scraping menggunakan Octoparse 8 
-                    pada tanggal 25 Februari 2024 di website [lamudi](https://www.lamudi.co.id/)""")
+                    pada tanggal 25 Februari 2024 di website [lamudi](https://www.lamudi.co.id/) yang memperoleh kurang lebih 1200 data""")
         
         with st.container():
             st.subheader('Pengembangan')
