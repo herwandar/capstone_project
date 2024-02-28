@@ -79,35 +79,42 @@ def index():
 
 def prediksi():
     st.info('kamar tidur, bangunan, lahan, dan kamar mandi tidak boleh 0')
-    kamar_tidur = st.number_input('Jumlah Kamar Tidur',value=0,step=1)
-    bangunan = st.number_input('Ukuran Bangunan (m²)',value=0,step=1)
-    lahan =  st.number_input('Ukuran Lahan (m²)',value=0,step=1)
-    kamar_mandi = st.number_input('jumlah kamar mandi',value=0,step=1)
+    col1,col2 = st.columns(2)
+    with col1:
+      kamar_tidur = st.number_input('Jumlah Kamar Tidur',value=0,step=1)
+      bangunan = st.number_input('Ukuran Bangunan (m²)',value=0,step=1)
+    with col2:
+      lahan =  st.number_input('Ukuran Lahan (m²)',value=0,step=1)
+      kamar_mandi = st.number_input('jumlah kamar mandi',value=0,step=1)
     kota = st.selectbox('Pilih Lokasi', sorted(df['alamat'].unique().tolist()))
     selected_city = df[df['alamat'] == kota]
     latitude = selected_city['latitude'].astype(float).values[0]
     longitude = selected_city['longitude'].astype(float).values[0]
-    sistem_alarm = st.select_slider("Sistem Alarm", options=["N", "Y"])
-    gym = st.select_slider("Gym", options=["N", "Y"])
-    internet_broadband_wifi = st.select_slider("Internet Broadband/Wifi", options=["N", "Y"])
-    tv_kabel = st.select_slider("TV Kabel", options=["N", "Y"])
-    pemanas_ruangan = st.select_slider("Pemanas Ruangan", options=["N", "Y"])
-    air_panas = st.select_slider("Air Panas", options=["N", "Y"])
-    telepon = st.select_slider("Telepon", options=["N", "Y"])
-    televisi = st.select_slider("Televisi", options=["N", "Y"])
-    kitchen_set = st.select_slider("Kitchen Set", options=["N", "Y"])
-    garasi = st.select_slider("Garasi", options=["N", "Y"])
-    secure_parking = st.select_slider("Secure Parking", options=["N", "Y"])
-    kolam_renang = st.select_slider("Kolam Renang", options=["N", "Y"])
-    lapangan_tenis = st.select_slider("Lapangan Tenis", options=["N", "Y"])
-    balkon = st.select_slider("Balkon", options=["N", "Y"])
-    dek = st.select_slider("Dek", options=["N", "Y"])
-    halaman_terbuka = st.select_slider("Halaman Terbuka", options=["N", "Y"])
-    area_hiburan_outdoor = st.select_slider("Area Hiburan Outdoor", options=["N", "Y"])
-    pagar_penuh = st.select_slider("Pagar Penuh", options=["N", "Y"])
-    taman = st.select_slider("Taman", options=["N", "Y"])
-    keamanan_24_jam = st.select_slider("Keamanan 24 Jam", options=["N", "Y"])
-    taman_bermain_anak = st.select_slider("Taman Bermain Anak", options=["N", "Y"])
+    col1,col2,col3 = st.columns(3)
+    with col1:
+      sistem_alarm = st.select_slider("Sistem Alarm", options=["N", "Y"])
+      gym = st.select_slider("Gym", options=["N", "Y"])
+      internet_broadband_wifi = st.select_slider("Internet Broadband/Wifi", options=["N", "Y"])
+      tv_kabel = st.select_slider("TV Kabel", options=["N", "Y"])
+      pemanas_ruangan = st.select_slider("Pemanas Ruangan", options=["N", "Y"])
+      air_panas = st.select_slider("Air Panas", options=["N", "Y"])
+      telepon = st.select_slider("Telepon", options=["N", "Y"])
+    with col2:
+      televisi = st.select_slider("Televisi", options=["N", "Y"])
+      kitchen_set = st.select_slider("Kitchen Set", options=["N", "Y"])
+      garasi = st.select_slider("Garasi", options=["N", "Y"])
+      secure_parking = st.select_slider("Secure Parking", options=["N", "Y"])
+      kolam_renang = st.select_slider("Kolam Renang", options=["N", "Y"])
+      lapangan_tenis = st.select_slider("Lapangan Tenis", options=["N", "Y"])
+      balkon = st.select_slider("Balkon", options=["N", "Y"])
+    with col3:
+      dek = st.select_slider("Dek", options=["N", "Y"])
+      halaman_terbuka = st.select_slider("Halaman Terbuka", options=["N", "Y"])
+      area_hiburan_outdoor = st.select_slider("Area Hiburan Outdoor", options=["N", "Y"])
+      pagar_penuh = st.select_slider("Pagar Penuh", options=["N", "Y"])
+      taman = st.select_slider("Taman", options=["N", "Y"])
+      keamanan_24_jam = st.select_slider("Keamanan 24 Jam", options=["N", "Y"])
+      taman_bermain_anak = st.select_slider("Taman Bermain Anak", options=["N", "Y"])
     if st.button('Submit'):
         if any(value == 0 for value in [kamar_tidur, bangunan, lahan, kamar_mandi]):
             st.warning('Masukkan angka yang benar untuk kamar tidur, bangunan, lahan, dan kamar mandi.')
