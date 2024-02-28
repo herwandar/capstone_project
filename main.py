@@ -90,51 +90,51 @@ def prediksi():
     selected_city = df[df['alamat'] == kota]
     latitude = selected_city['latitude'].astype(float).values[0]
     longitude = selected_city['longitude'].astype(float).values[0]
-    col1,col2,col3 = st.columns(3)
+        col1,col2,col3 = st.columns(3)
     with col1:
-        sistem_alarm_check = st.checkbox("Sistem Alarm", value=True)
+        sistem_alarm_check = st.checkbox("Sistem Alarm", value=False)
         sistem_alarm = "Y" if sistem_alarm_check else "N"
-        gym_check = st.checkbox("Gym", value=True)
+        gym_check = st.checkbox("Gym", value=False)
         gym = "Y" if gym_check else 'N'
-        internet_broadband_wifi_check = st.checkbox("Internet Broadband/Wifi", value=True)
+        internet_broadband_wifi_check = st.checkbox("Internet Broadband/Wifi", value=False)
         internet_broadband_wifi = "Y" if internet_broadband_wifi_check else 'N'
-        tv_kabel_check = st.checkbox("TV Kabel", value=True)
+        tv_kabel_check = st.checkbox("TV Kabel", value=False)
         tv_kabel = 'Y' if tv_kabel_check else 'N'
-        pemanas_ruangan_check = st.checkbox("Pemanas Ruangan", value=True)
+        pemanas_ruangan_check = st.checkbox("Pemanas Ruangan", value=False)
         pemanas_ruangan = "Y" if pemanas_ruangan_check else 'N'
-        air_panas_check = st.checkbox("Air Panas", value=True)
+        air_panas_check = st.checkbox("Air Panas", value=False)
         air_panas = 'Y' if air_panas_check else 'N'
-        telepon_check = st.checkbox("Telepon", value=True)
+        telepon_check = st.checkbox("Telepon", value=False)
         telepon = 'Y' if telepon_check else 'N'
     with col2:
-        televisi_check = st.checkbox("Televisi", value=True)
+        televisi_check = st.checkbox("Televisi", value=False)
         televisi = 'Y' if televisi_check else 'N'
-        kitchen_set_check = st.checkbox("Kitchen Set", value=True)
+        kitchen_set_check = st.checkbox("Kitchen Set", value=False)
         kitchen_set = 'Y' if kitchen_set_check else 'N'
-        garasi_check = st.checkbox("Garasi", value=True)
+        garasi_check = st.checkbox("Garasi", value=False)
         garasi = 'Y' if garasi_check else 'N'
-        secure_parking_check = st.checkbox("Secure Parking", value=True)
+        secure_parking_check = st.checkbox("Secure Parking", value=False)
         secure_parking = 'Y' if secure_parking_check else 'N'
-        kolam_renang_check = st.checkbox("Kolam Renang", value=True)
+        kolam_renang_check = st.checkbox("Kolam Renang", value=False)
         kolam_renang = 'Y' if kolam_renang_check else 'N'
-        lapangan_tenis_check = st.checkbox("Lapangan Tenis", value=True)
+        lapangan_tenis_check = st.checkbox("Lapangan Tenis", value=False)
         lapangan_tenis = 'Y' if lapangan_tenis_check else 'N'
-        balkon_check = st.checkbox("Balkon", value=True)
+        balkon_check = st.checkbox("Balkon", value=False)
         balkon = 'Y' if balkon_check else 'N'
     with col3:
-        dek_check = st.checkbox("Dek", value=True)
+        dek_check = st.checkbox("Dek", value=False)
         dek = 'Y' if dek_check else 'N' 
-        halaman_terbuka_check = st.checkbox("Halaman Terbuka", value=True)
+        halaman_terbuka_check = st.checkbox("Halaman Terbuka", value=False)
         halaman_terbuka = 'Y' if halaman_terbuka_check else 'N'
-        area_hiburan_outdoor = st.checkbox("Area Hiburan Outdoor", value=True)
+        area_hiburan_outdoor = st.checkbox("Area Hiburan Outdoor", value=False)
         area_hiburan_outdoor =  'Y' if area_hiburan_outdoor else 'N'
-        pagar_penuh_check = st.checkbox("Pagar Penuh", value=True)
+        pagar_penuh_check = st.checkbox("Pagar Penuh", value=False)
         pagar_penuh = 'Y' if pagar_penuh_check else 'N'
-        taman_check = st.checkbox("Taman", value=True)
+        taman_check = st.checkbox("Taman", value=False)
         taman = 'Y' if taman_check else 'N'
-        keamanan_24_jam_check = st.checkbox("Keamanan 24 Jam", value=True)
+        keamanan_24_jam_check = st.checkbox("Keamanan 24 Jam", value=False)
         keamanan_24_jam = 'Y' if keamanan_24_jam_check else 'N'
-        taman_bermain_anak_check = st.checkbox("Taman Bermain Anak", value=True)
+        taman_bermain_anak_check = st.checkbox("Taman Bermain Anak", value=False)
         taman_bermain_anak = 'Y' if taman_bermain_anak_check else 'N'
     if st.button('Submit'):
         if any(value == 0 for value in [kamar_tidur, bangunan, lahan, kamar_mandi]):
