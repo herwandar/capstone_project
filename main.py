@@ -36,6 +36,8 @@ def main():
         prediksi()
     with tab4:
         kesimpulan_data()
+    st.write('')
+    st.write('')
     st.error("""Data Diambil Dengan Metode Web Scrapping Di Website [Lamudi](https://www.lamudi.co.id/)""")
   
 def index():
