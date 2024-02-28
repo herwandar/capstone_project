@@ -32,14 +32,17 @@ def main():
         index()
     with tab2:
         analisa_data()
+        st.write('')
+        st.write('')
+        st.error("""Data Diambil Dengan Metode Web Scrapping Di Website [Lamudi](https://www.lamudi.co.id/)""")
     with tab3:
         prediksi()
+        st.write('')
+        st.write('')
+        st.error("""Data Diambil Dengan Metode Web Scrapping Di Website [Lamudi](https://www.lamudi.co.id/)""")
     with tab4:
         kesimpulan_data()
-    st.write('')
-    st.write('')
-    st.error("""Data Diambil Dengan Metode Web Scrapping Di Website [Lamudi](https://www.lamudi.co.id/)""")
-  
+
 def index():
     with st.container():
         home_image = Image.open('Gambar/rumah.jpg')
