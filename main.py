@@ -26,6 +26,7 @@ with open('model/random_forest_model.pkl', 'rb') as file:
     model_prediksi = pickle.load(file)
 
 def main():
+    st.markdown("<div style='text-align: center;'><h2>Dashboard Prediksi Harga Rumah Di Kota Yogyakarta</h2></div>", unsafe_allow_html=True)
     tab1,tab2,tab3,tab4 =st.tabs(["Home", "Analisa", "Prediksi Harga", "Kesimpulan"])
     with tab1:
         index()
@@ -39,7 +40,6 @@ def main():
   
 def index():
     with st.container():
-        st.markdown("<div style='text-align: center;'><h2>Dashboard Prediksi Harga Rumah Di Kota Yogyakarta</h2></div>", unsafe_allow_html=True)
         home_image = Image.open('Gambar/rumah.jpg')
         st.image(home_image,caption='sumber freepik',use_column_width=True)
         st.header('Definisi Rumah')
