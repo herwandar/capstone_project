@@ -26,17 +26,17 @@ with open('model/random_forest_model.pkl', 'rb') as file:
     model_prediksi = pickle.load(file)
 
 def main():
-    selected_tab = st.sidebar.radio("Pilih Halaman", ["Home", "Analisa", "Prediksi Harga", "Kesimpulan"])
-    if selected_tab == "Home":
+    tab1,tab2,tab3,tab4 =st.tabs(["Home", "Analisa", "Prediksi Harga", "Kesimpulan"])
+    with tab1:
         index()
-    elif selected_tab == "Analisa":
+    with tab2:
         analisa_data()
-    elif selected_tab == "Prediksi Harga":
+    with tab3:
         prediksi()
-    elif selected_tab == "Kesimpulan":
+    with tab4:
         kesimpulan_data()
-    st.sidebar.error("""Data Diambil Dengan Metode Web Scrapping Di Website [Lamudi](https://www.lamudi.co.id/)""")
-
+    st.error("""Data Diambil Dengan Metode Web Scrapping Di Website [Lamudi](https://www.lamudi.co.id/)""")
+  
 def index():
     with st.container():
         st.markdown("<div style='text-align: center;'><h2>Dashboard Prediksi Harga Rumah Di Kota Yogyakarta</h2></div>", unsafe_allow_html=True)
