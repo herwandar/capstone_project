@@ -90,7 +90,7 @@ def prediksi():
     selected_city = df[df['alamat'] == kota]
     latitude = selected_city['latitude'].astype(float).values[0]
     longitude = selected_city['longitude'].astype(float).values[0]
-        col1,col2,col3 = st.columns(3)
+    col1,col2,col3 = st.columns(3)
     with col1:
         sistem_alarm_check = st.checkbox("Sistem Alarm", value=False)
         sistem_alarm = "Y" if sistem_alarm_check else "N"
