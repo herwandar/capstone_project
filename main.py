@@ -73,6 +73,7 @@ def index():
 
 
 def prediksi():
+    st.info('kamar tidur, bangunan, lahan, dan kamar mandi tidak boleh 0')
     kamar_tidur = st.number_input('Jumlah Kamar Tidur',value=0,step=1)
     bangunan = st.number_input('Ukuran Bangunan (m²)',value=0,step=1)
     lahan =  st.number_input('Ukuran Lahan (m²)',value=0,step=1)
@@ -103,6 +104,9 @@ def prediksi():
     keamanan_24_jam = st.select_slider("Keamanan 24 Jam", options=["N", "Y"])
     taman_bermain_anak = st.select_slider("Taman Bermain Anak", options=["N", "Y"])
     if st.button('Submit'):
+        if kamar_tidur == bangunan == lahan == kamar_mandi == 0:
+            st.warning('Masukkan angka yang benar untuk kamar tidur, bangunan, lahan, dan kamar mandi.')
+            return
         if model_prediksi is not None:
             mapping = {'Y': 1, 'N': 0}
             fasilitas = [
