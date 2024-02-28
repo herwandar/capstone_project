@@ -92,29 +92,50 @@ def prediksi():
     longitude = selected_city['longitude'].astype(float).values[0]
     col1,col2,col3 = st.columns(3)
     with col1:
-      sistem_alarm = st.select_slider("Sistem Alarm", options=["N", "Y"])
-      gym = st.select_slider("Gym", options=["N", "Y"])
-      internet_broadband_wifi = st.select_slider("Internet Broadband/Wifi", options=["N", "Y"])
-      tv_kabel = st.select_slider("TV Kabel", options=["N", "Y"])
-      pemanas_ruangan = st.select_slider("Pemanas Ruangan", options=["N", "Y"])
-      air_panas = st.select_slider("Air Panas", options=["N", "Y"])
-      telepon = st.select_slider("Telepon", options=["N", "Y"])
+        sistem_alarm_check = st.checkbox("Sistem Alarm", value=True)
+        sistem_alarm = "Y" if sistem_alarm_check else "N"
+        gym_check = st.checkbox("Gym", value=True)
+        gym = "Y" if gym_check else 'N'
+        internet_broadband_wifi_check = st.checkbox("Internet Broadband/Wifi", value=True)
+        internet_broadband_wifi = "Y" if internet_broadband_wifi_check else 'N'
+        tv_kabel_check = st.checkbox("TV Kabel", value=True)
+        tv_kabel = 'Y' if tv_kabel_check else 'N'
+        pemanas_ruangan_check = st.checkbox("Pemanas Ruangan", value=True)
+        pemanas_ruangan = "Y" if pemanas_ruangan_check else 'N'
+        air_panas_check = st.checkbox("Air Panas", value=True)
+        air_panas = 'Y' if air_panas_check else 'N'
+        telepon_check = st.checkbox("Telepon", value=True)
+        telepon = 'Y' if telepon_check else 'N'
     with col2:
-      televisi = st.select_slider("Televisi", options=["N", "Y"])
-      kitchen_set = st.select_slider("Kitchen Set", options=["N", "Y"])
-      garasi = st.select_slider("Garasi", options=["N", "Y"])
-      secure_parking = st.select_slider("Secure Parking", options=["N", "Y"])
-      kolam_renang = st.select_slider("Kolam Renang", options=["N", "Y"])
-      lapangan_tenis = st.select_slider("Lapangan Tenis", options=["N", "Y"])
-      balkon = st.select_slider("Balkon", options=["N", "Y"])
+        televisi_check = st.checkbox("Televisi", value=True)
+        televisi = 'Y' if televisi_check else 'N'
+        kitchen_set_check = st.checkbox("Kitchen Set", value=True)
+        kitchen_set = 'Y' if kitchen_set_check else 'N'
+        garasi_check = st.checkbox("Garasi", value=True)
+        garasi = 'Y' if garasi_check else 'N'
+        secure_parking_check = st.checkbox("Secure Parking", value=True)
+        secure_parking = 'Y' if secure_parking_check else 'N'
+        kolam_renang_check = st.checkbox("Kolam Renang", value=True)
+        kolam_renang = 'Y' if kolam_renang_check else 'N'
+        lapangan_tenis_check = st.checkbox("Lapangan Tenis", value=True)
+        lapangan_tenis = 'Y' if lapangan_tenis_check else 'N'
+        balkon_check = st.checkbox("Balkon", value=True)
+        balkon = 'Y' if balkon_check else 'N'
     with col3:
-      dek = st.select_slider("Dek", options=["N", "Y"])
-      halaman_terbuka = st.select_slider("Halaman Terbuka", options=["N", "Y"])
-      area_hiburan_outdoor = st.select_slider("Area Hiburan Outdoor", options=["N", "Y"])
-      pagar_penuh = st.select_slider("Pagar Penuh", options=["N", "Y"])
-      taman = st.select_slider("Taman", options=["N", "Y"])
-      keamanan_24_jam = st.select_slider("Keamanan 24 Jam", options=["N", "Y"])
-      taman_bermain_anak = st.select_slider("Taman Bermain Anak", options=["N", "Y"])
+        dek_check = st.checkbox("Dek", value=True)
+        dek = 'Y' if dek_check else 'N' 
+        halaman_terbuka_check = st.checkbox("Halaman Terbuka", value=True)
+        halaman_terbuka = 'Y' if halaman_terbuka_check else 'N'
+        area_hiburan_outdoor = st.checkbox("Area Hiburan Outdoor", value=True)
+        area_hiburan_outdoor =  'Y' if area_hiburan_outdoor else 'N'
+        pagar_penuh_check = st.checkbox("Pagar Penuh", value=True)
+        pagar_penuh = 'Y' if pagar_penuh_check else 'N'
+        taman_check = st.checkbox("Taman", value=True)
+        taman = 'Y' if taman_check else 'N'
+        keamanan_24_jam_check = st.checkbox("Keamanan 24 Jam", value=True)
+        keamanan_24_jam = 'Y' if keamanan_24_jam_check else 'N'
+        taman_bermain_anak_check = st.checkbox("Taman Bermain Anak", value=True)
+        taman_bermain_anak = 'Y' if taman_bermain_anak_check else 'N'
     if st.button('Submit'):
         if any(value == 0 for value in [kamar_tidur, bangunan, lahan, kamar_mandi]):
             st.warning('Masukkan angka yang benar untuk kamar tidur, bangunan, lahan, dan kamar mandi.')
