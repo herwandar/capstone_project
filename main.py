@@ -104,7 +104,7 @@ def prediksi():
     keamanan_24_jam = st.select_slider("Keamanan 24 Jam", options=["N", "Y"])
     taman_bermain_anak = st.select_slider("Taman Bermain Anak", options=["N", "Y"])
     if st.button('Submit'):
-        if kamar_tidur == bangunan == lahan == kamar_mandi == 0:
+        if any(value == 0 for value in [kamar_tidur, bangunan, lahan, kamar_mandi]):
             st.warning('Masukkan angka yang benar untuk kamar tidur, bangunan, lahan, dan kamar mandi.')
             return
         if model_prediksi is not None:
