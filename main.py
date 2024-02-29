@@ -137,7 +137,7 @@ def prediksi():
         taman_bermain_anak_check = st.checkbox("Taman Bermain Anak", value=False)
         taman_bermain_anak = 'Y' if taman_bermain_anak_check else 'N'
     if st.button('Submit'):
-        if any(value == 0 for value in [kamar_tidur, bangunan, lahan, kamar_mandi]):
+        if any(value <= 0 for value in [kamar_tidur, bangunan, lahan, kamar_mandi]):
             st.warning('Masukkan angka yang benar untuk kamar tidur, bangunan, lahan, dan kamar mandi.')
             return
         if model_prediksi is not None:
