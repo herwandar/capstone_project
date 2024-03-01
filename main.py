@@ -291,8 +291,8 @@ def analisa_data():
                         ).interactive()
                         st.altair_chart(bangunan2,use_container_width=True)
                         st.text("""
-                                terdapat rumah dengan luas 1200 meter persegu dengan harga 55 M
-                                walaupun ada bangunanya lebih luas 2400 meter persegi dengan harga di bawahnya 25 M 
+                                terdapat rumah dengan luas 1200 meter persegi dengan harga 55 M
+                                walaupun ada bangunanya lebih luas 2900 meter persegi dengan harga di bawahnya 25 M 
                                 """) 
                         st.write('')
                         st.write('')
