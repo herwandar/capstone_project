@@ -86,137 +86,194 @@ def predict():
             taman_bermain_anak_check = st.checkbox('Taman Bermain Anak',value=False)
             taman_bermain_anak = 'Y' if taman_bermain_anak_check else 'N'
         
-        with st.expander('Sekitar Lokasi'):
-            col1,col2,col3 = st.columns(3)
-            with col1:
-                malioboro_check = st.checkbox('Malioboro', value=False)
-                malioboro = 'Y' if malioboro_check else 'N'
+        # with st.expander('Sekitar Lokasi'):
+        #     col1,col2,col3 = st.columns(3)
+        #     with col1:
+        #         malioboro_check = st.checkbox('Malioboro', value=False)
+        #         malioboro = 'Y' if malioboro_check else 'N'
 
-                masjid_jogokariyan_check = st.checkbox('Masjid Jogokariyan', value=False)
-                masjid_jogokariyan = 'Y' if masjid_jogokariyan_check else 'N'
+        #         masjid_jogokariyan_check = st.checkbox('Masjid Jogokariyan', value=False)
+        #         masjid_jogokariyan = 'Y' if masjid_jogokariyan_check else 'N'
 
-                malioboro_mall_check = st.checkbox('Malioboro Mall', value=False)
-                malioboro_mall = 'Y' if malioboro_mall_check else 'N'
+        #         malioboro_mall_check = st.checkbox('Malioboro Mall', value=False)
+        #         malioboro_mall = 'Y' if malioboro_mall_check else 'N'
 
-                universitas_ahmad_dahlan_check = st.checkbox('Universitas Ahmad Dahlan', value=False)
-                universitas_ahmad_dahlan = 'Y' if universitas_ahmad_dahlan_check else 'N'
+        #         universitas_ahmad_dahlan_check = st.checkbox('Universitas Ahmad Dahlan', value=False)
+        #         universitas_ahmad_dahlan = 'Y' if universitas_ahmad_dahlan_check else 'N'
 
-                terminal_giwangan_check = st.checkbox('Terminal Giwangan', value=False)
-                terminal_giwangan = 'Y' if terminal_giwangan_check else 'N'
+        #         terminal_giwangan_check = st.checkbox('Terminal Giwangan', value=False)
+        #         terminal_giwangan = 'Y' if terminal_giwangan_check else 'N'
 
-                universitas_gadjah_mada_check = st.checkbox('Universitas Gadjah Mada', value=False)
-                universitas_gadjah_mada = 'Y' if universitas_gadjah_mada_check else 'N'
+        #         universitas_gadjah_mada_check = st.checkbox('Universitas Gadjah Mada', value=False)
+        #         universitas_gadjah_mada = 'Y' if universitas_gadjah_mada_check else 'N'
 
-                universitas_sarjanawiyata_tamansiswa_check = st.checkbox('Universitas Sarjanawiyata Tamansiswa', value=False)
-                universitas_sarjanawiyata_tamansiswa = 'Y' if universitas_sarjanawiyata_tamansiswa_check else 'N'
+        #         universitas_sarjanawiyata_tamansiswa_check = st.checkbox('Universitas Sarjanawiyata Tamansiswa', value=False)
+        #         universitas_sarjanawiyata_tamansiswa = 'Y' if universitas_sarjanawiyata_tamansiswa_check else 'N'
 
-                universitas_pembangunan_nasional_veteran_yogyakarta_check = st.checkbox('Universitas Pembangunan Nasional Veteran Yogyakarta', value=False)
-                universitas_pembangunan_nasional_veteran_yogyakarta = 'Y' if universitas_pembangunan_nasional_veteran_yogyakarta_check else 'N'
+        #         universitas_pembangunan_nasional_veteran_yogyakarta_check = st.checkbox('Universitas Pembangunan Nasional Veteran Yogyakarta', value=False)
+        #         universitas_pembangunan_nasional_veteran_yogyakarta = 'Y' if universitas_pembangunan_nasional_veteran_yogyakarta_check else 'N'
 
-                lippo_plaza_jogja_check = st.checkbox('Lippo Plaza Jogja', value=False)
-                lippo_plaza_jogja = 'Y' if lippo_plaza_jogja_check else 'N'
+        #         lippo_plaza_jogja_check = st.checkbox('Lippo Plaza Jogja', value=False)
+        #         lippo_plaza_jogja = 'Y' if lippo_plaza_jogja_check else 'N'
 
-                masjid_gedhe_kauman_check = st.checkbox('Masjid Gedhe Kauman', value=False)
-                masjid_gedhe_kauman = 'Y' if masjid_gedhe_kauman_check else 'N'
+        #         masjid_gedhe_kauman_check = st.checkbox('Masjid Gedhe Kauman', value=False)
+        #         masjid_gedhe_kauman = 'Y' if masjid_gedhe_kauman_check else 'N'
 
-                universitas_islam_indonesia_check = st.checkbox('Universitas Islam Indonesia', value=False)
-                universitas_islam_indonesia = 'Y' if universitas_islam_indonesia_check else 'N'
+        #         universitas_islam_indonesia_check = st.checkbox('Universitas Islam Indonesia', value=False)
+        #         universitas_islam_indonesia = 'Y' if universitas_islam_indonesia_check else 'N'
             
-                sleman_city_hall_check = st.checkbox('Sleman City Hall', value=False)
-                sleman_city_hall = 'Y' if sleman_city_hall_check else 'N'
+        #         sleman_city_hall_check = st.checkbox('Sleman City Hall', value=False)
+        #         sleman_city_hall = 'Y' if sleman_city_hall_check else 'N'
 
-                institut_seni_indonesia_yogyakarta_check = st.checkbox('Institut Seni Indonesia Yogyakarta', value=False)
-                institut_seni_indonesia_yogyakarta = 'Y' if institut_seni_indonesia_yogyakarta_check else 'N'
+        #         institut_seni_indonesia_yogyakarta_check = st.checkbox('Institut Seni Indonesia Yogyakarta', value=False)
+        #         institut_seni_indonesia_yogyakarta = 'Y' if institut_seni_indonesia_yogyakarta_check else 'N'
 
-                sekolah_tinggi_teknologi_adisutjipto_check = st.checkbox('Sekolah Tinggi Teknologi Adisutjipto', value=False)
-                sekolah_tinggi_teknologi_adisutjipto = 'Y' if sekolah_tinggi_teknologi_adisutjipto_check else 'N'
+        #         sekolah_tinggi_teknologi_adisutjipto_check = st.checkbox('Sekolah Tinggi Teknologi Adisutjipto', value=False)
+        #         sekolah_tinggi_teknologi_adisutjipto = 'Y' if sekolah_tinggi_teknologi_adisutjipto_check else 'N'
         
-            with col2:
-                universitas_jenderal_achmad_yani_check = st.checkbox('Universitas Jenderal Achmad Yani', value=False)
-                universitas_jenderal_achmad_yani = 'Y' if universitas_jenderal_achmad_yani_check else 'N'
+        #     with col2:
+        #         universitas_jenderal_achmad_yani_check = st.checkbox('Universitas Jenderal Achmad Yani', value=False)
+        #         universitas_jenderal_achmad_yani = 'Y' if universitas_jenderal_achmad_yani_check else 'N'
 
-                universitas_tidar_check = st.checkbox('Universitas Tidar', value=False)
-                universitas_tidar = 'Y' if universitas_tidar_check else 'N'
+        #         universitas_tidar_check = st.checkbox('Universitas Tidar', value=False)
+        #         universitas_tidar = 'Y' if universitas_tidar_check else 'N'
             
-                jogja_city_mall_check = st.checkbox('Jogja City Mall', value=False)
-                jogja_city_mall = 'Y' if jogja_city_mall_check else 'N'
+        #         jogja_city_mall_check = st.checkbox('Jogja City Mall', value=False)
+        #         jogja_city_mall = 'Y' if jogja_city_mall_check else 'N'
 
-                ambarrukmo_plaza_check = st.checkbox('Ambarrukmo Plaza', value=False)
-                ambarrukmo_plaza = 'Y' if ambarrukmo_plaza_check else 'N'
+        #         ambarrukmo_plaza_check = st.checkbox('Ambarrukmo Plaza', value=False)
+        #         ambarrukmo_plaza = 'Y' if ambarrukmo_plaza_check else 'N'
                 
-                universitas_muhammadiyah_yogyakarta_check = st.checkbox('Universitas Muhammadiyah Yogyakarta', value=False)
-                universitas_muhammadiyah_yogyakarta = 'Y' if universitas_muhammadiyah_yogyakarta_check else 'N'
+        #         universitas_muhammadiyah_yogyakarta_check = st.checkbox('Universitas Muhammadiyah Yogyakarta', value=False)
+        #         universitas_muhammadiyah_yogyakarta = 'Y' if universitas_muhammadiyah_yogyakarta_check else 'N'
 
-                monumen_jogja_kembali_check = st.checkbox('Monumen Jogja Kembali', value=False)
-                monumen_jogja_kembali = 'Y' if monumen_jogja_kembali_check else 'N'
+        #         monumen_jogja_kembali_check = st.checkbox('Monumen Jogja Kembali', value=False)
+        #         monumen_jogja_kembali = 'Y' if monumen_jogja_kembali_check else 'N'
 
-                stasiun_yogyakarta_check = st.checkbox('Stasiun Yogyakarta', value=False)
-                stasiun_yogyakarta = 'Y' if stasiun_yogyakarta_check else 'N'
+        #         stasiun_yogyakarta_check = st.checkbox('Stasiun Yogyakarta', value=False)
+        #         stasiun_yogyakarta = 'Y' if stasiun_yogyakarta_check else 'N'
 
-                universitas_teknologi_yogyakarta_check = st.checkbox('Universitas Teknologi Yogyakarta', value=False)
-                universitas_teknologi_yogyakarta = 'Y' if universitas_teknologi_yogyakarta_check else 'N'
+        #         universitas_teknologi_yogyakarta_check = st.checkbox('Universitas Teknologi Yogyakarta', value=False)
+        #         universitas_teknologi_yogyakarta = 'Y' if universitas_teknologi_yogyakarta_check else 'N'
 
-                universitas_negeri_yogyakarta_check = st.checkbox('Universitas Negeri Yogyakarta', value=False)
-                universitas_negeri_yogyakarta = 'Y' if universitas_negeri_yogyakarta_check else 'N'
+        #         universitas_negeri_yogyakarta_check = st.checkbox('Universitas Negeri Yogyakarta', value=False)
+        #         universitas_negeri_yogyakarta = 'Y' if universitas_negeri_yogyakarta_check else 'N'
 
-                sman_1_teladan_yogyakarta_check = st.checkbox('Sman 1 Teladan Yogyakarta', value=False)
-                sman_1_teladan_yogyakarta = 'Y' if sman_1_teladan_yogyakarta_check else 'N'
+        #         sman_1_teladan_yogyakarta_check = st.checkbox('Sman 1 Teladan Yogyakarta', value=False)
+        #         sman_1_teladan_yogyakarta = 'Y' if sman_1_teladan_yogyakarta_check else 'N'
 
-                rs_panti_nugroho_check = st.checkbox('RS Panti Nugroho', value=False)
-                rs_panti_nugroho = 'Y' if rs_panti_nugroho_check else 'N'
+        #         rs_panti_nugroho_check = st.checkbox('RS Panti Nugroho', value=False)
+        #         rs_panti_nugroho = 'Y' if rs_panti_nugroho_check else 'N'
 
-                galeria_mall_check = st.checkbox('Galeria Mall', value=False)
-                galeria_mall = 'Y' if galeria_mall_check else 'N'
+        #         galeria_mall_check = st.checkbox('Galeria Mall', value=False)
+        #         galeria_mall = 'Y' if galeria_mall_check else 'N'
 
-                rumah_sakit_jogja_international_hospital_check = st.checkbox('Rumah Sakit Jogja International Hospital', value=False)
-                rumah_sakit_jogja_international_hospital = 'Y' if rumah_sakit_jogja_international_hospital_check else 'N'
+        #         rumah_sakit_jogja_international_hospital_check = st.checkbox('Rumah Sakit Jogja International Hospital', value=False)
+        #         rumah_sakit_jogja_international_hospital = 'Y' if rumah_sakit_jogja_international_hospital_check else 'N'
 
-                universitas_kristen_duta_wacana_check = st.checkbox('Universitas Kristen Duta Wacana', value=False)
-                universitas_kristen_duta_wacana = 'Y' if universitas_kristen_duta_wacana_check else 'N'
+        #         universitas_kristen_duta_wacana_check = st.checkbox('Universitas Kristen Duta Wacana', value=False)
+        #         universitas_kristen_duta_wacana = 'Y' if universitas_kristen_duta_wacana_check else 'N'
 
-            with col3:
-                stasiun_tugu_check = st.checkbox('Stasiun Tugu', value=False)
-                stasiun_tugu = 'Y' if stasiun_tugu_check else 'N'
+        #     with col3:
+        #         stasiun_tugu_check = st.checkbox('Stasiun Tugu', value=False)
+        #         stasiun_tugu = 'Y' if stasiun_tugu_check else 'N'
 
-                institut_sains_dan_teknologi_akprind_check = st.checkbox('Institut Sains dan Teknologi Akprind', value=False)
-                institut_sains_dan_teknologi_akprind = 'Y' if institut_sains_dan_teknologi_akprind_check else 'N'
+        #         institut_sains_dan_teknologi_akprind_check = st.checkbox('Institut Sains dan Teknologi Akprind', value=False)
+        #         institut_sains_dan_teknologi_akprind = 'Y' if institut_sains_dan_teknologi_akprind_check else 'N'
 
-                tugu_yogyakarta_check = st.checkbox('Tugu Yogyakarta', value=False)
-                tugu_yogyakarta = 'Y' if tugu_yogyakarta_check else 'N'
+        #         tugu_yogyakarta_check = st.checkbox('Tugu Yogyakarta', value=False)
+        #         tugu_yogyakarta = 'Y' if tugu_yogyakarta_check else 'N'
 
-                universitas_aisyiyah_check = st.checkbox('Universitas Aisyiyah', value=False)
-                universitas_aisyiyah = 'Y' if universitas_aisyiyah_check else 'N'
+        #         universitas_aisyiyah_check = st.checkbox('Universitas Aisyiyah', value=False)
+        #         universitas_aisyiyah = 'Y' if universitas_aisyiyah_check else 'N'
 
-                universitas_atmajaya_yogyakarta_check = st.checkbox('Universitas Atma Jaya Yogyakarta', value=False)
-                universitas_atmajaya_yogyakarta = 'Y' if universitas_atmajaya_yogyakarta_check else 'N'
+        #         universitas_atmajaya_yogyakarta_check = st.checkbox('Universitas Atma Jaya Yogyakarta', value=False)
+        #         universitas_atmajaya_yogyakarta = 'Y' if universitas_atmajaya_yogyakarta_check else 'N'
 
-                rs_sardjito_yogyakarta_check = st.checkbox('RS Sardjito Yogyakarta', value=False)
-                rs_sardjito_yogyakarta = 'Y' if rs_sardjito_yogyakarta_check else 'N'
+        #         rs_sardjito_yogyakarta_check = st.checkbox('RS Sardjito Yogyakarta', value=False)
+        #         rs_sardjito_yogyakarta = 'Y' if rs_sardjito_yogyakarta_check else 'N'
 
-                sman_6_yogyakarta_check = st.checkbox('Sman 6 Yogyakarta', value=False)
-                sman_6_yogyakarta = 'Y' if sman_6_yogyakarta_check else 'N'
+        #         sman_6_yogyakarta_check = st.checkbox('Sman 6 Yogyakarta', value=False)
+        #         sman_6_yogyakarta = 'Y' if sman_6_yogyakarta_check else 'N'
 
-                stmik_amikom_yogyakarta_check = st.checkbox('STMIK Amikom Yogyakarta', value=False)
-                stmik_amikom_yogyakarta = 'Y' if stmik_amikom_yogyakarta_check else 'N'
+        #         stmik_amikom_yogyakarta_check = st.checkbox('STMIK Amikom Yogyakarta', value=False)
+        #         stmik_amikom_yogyakarta = 'Y' if stmik_amikom_yogyakarta_check else 'N'
 
-                universitas_islam_negeri_sunan_kalijaga_check = st.checkbox('Universitas Islam Negeri Sunan Kalijaga', value=False)
-                universitas_islam_negeri_sunan_kalijaga = 'Y' if universitas_islam_negeri_sunan_kalijaga_check else 'N'
+        #         universitas_islam_negeri_sunan_kalijaga_check = st.checkbox('Universitas Islam Negeri Sunan Kalijaga', value=False)
+        #         universitas_islam_negeri_sunan_kalijaga = 'Y' if universitas_islam_negeri_sunan_kalijaga_check else 'N'
 
-                gereja_saint_francis_xaverius_yogyakarta_check = st.checkbox('Gereja Saint Francius Xaverius Yogyakarta', value=False)
-                gereja_saint_francis_xaverius_yogyakarta = 'Y' if gereja_saint_francis_xaverius_yogyakarta_check else 'N'
+        #         gereja_saint_francis_xaverius_yogyakarta_check = st.checkbox('Gereja Saint Francius Xaverius Yogyakarta', value=False)
+        #         gereja_saint_francis_xaverius_yogyakarta = 'Y' if gereja_saint_francis_xaverius_yogyakarta_check else 'N'
 
-                sahid_j_walk_check = st.checkbox('Sahid J-Walk', value=False)
-                sahid_j_walk = 'Y' if sahid_j_walk_check else 'N'
+        #         sahid_j_walk_check = st.checkbox('Sahid J-Walk', value=False)
+        #         sahid_j_walk = 'Y' if sahid_j_walk_check else 'N'
 
-                rumah_sakit_panti_rapih_check = st.checkbox('Rumah Sakit Panti Rapih', value=False)
-                rumah_sakit_panti_rapih = 'Y' if rumah_sakit_panti_rapih_check else 'N'
+        #         rumah_sakit_panti_rapih_check = st.checkbox('Rumah Sakit Panti Rapih', value=False)
+        #         rumah_sakit_panti_rapih = 'Y' if rumah_sakit_panti_rapih_check else 'N'
 
-                universitas_sanata_dharma_yogyakarta_check = st.checkbox('Universitas Sanata Dharma Yogyakarta', value=False)
-                universitas_sanata_dharma_yogyakarta = 'Y' if universitas_sanata_dharma_yogyakarta_check else 'N'
+        #         universitas_sanata_dharma_yogyakarta_check = st.checkbox('Universitas Sanata Dharma Yogyakarta', value=False)
+        #         universitas_sanata_dharma_yogyakarta = 'Y' if universitas_sanata_dharma_yogyakarta_check else 'N'
 
-                sman_3_yogyakarta_check = st.checkbox('Sman 3 Yogyakarta', value=False)
-                sman_3_yogyakarta = 'Y' if sman_3_yogyakarta_check else 'N'
-
+        #         sman_3_yogyakarta_check = st.checkbox('Sman 3 Yogyakarta', value=False)
+        #         sman_3_yogyakarta = 'Y' if sman_3_yogyakarta_check else 'N'
+        start_column = 'malioboro'
+        end_column = 'sman_3_yogyakarta'
+        filtered_columns = selected_city.columns[selected_city.columns.get_loc(start_column):selected_city.columns.get_loc(end_column) + 1]
+        fitur_2_list = {}
+        nama_deskriptif = {
+        'malioboro': 'Malioboro',
+        'masjid_jogokariyan': 'Masjid Jogokariyan',
+        'malioboro_mall': 'Malioboro Mall',
+        'universitas_ahmad_dahlan' : 'Universitas Ahmad Dahlan',	
+        'terminal_giwangan' : 'Termonal Giwangan',	
+        'universitas_gadjah_mada' : 'Universitas Gadjah Mada',
+        'universitas_sarjanawiyata_tamansiswa':'Univesitas Sarjanawiyata Tamansiswa',
+        'universitas_pembangunan_nasional_veteran_yogyakarta' : 'Universitas Pembangunan Nasional Veteran Yogyakarta',
+        'lippo_plaza_jogja' : 'Lippo Plaza Jogja',
+        'masjid_gedhe_kauman' : 'Masjid Gedhe Kauman',	
+        'universitas_islam_indonesia' : 'Universitas Islam Indonesia',
+        'sleman_city_hall' : 'Sleman City Hall',
+        'institut_seni_indonesia_yogyakarta' : 'Institut Seni Indonesia Yogyakarta',
+        'sekolah_tinggi_teknologi_adisutjipto' : 'Sekolah Tinggi Teknologi Adisutjipto',
+        'universitas_jenderal_achmad_yani' : 'Universitas Jendaral Achmad Yani',
+        'universitas_tidar' : 'Universitas Tidar',
+        'jogja_city_mall' : 'Jogja City Mall',
+        'ambarrukmo_plaza' : 'Amabarukmo Plaza',
+        'universitas_muhammadiyah_yogyakarta' : 'Universitas Muhammadiyah Yogyakarta',
+        'monumen_jogja_kembali' : 'Monumen Jogja Kembali',
+        'stasiun_yogyakarta' : 'Stasiun Yogyakarta',
+        'universitas_teknologi_yogyakarta' : 'Universitas Teknologi Yogyakarta',
+        'universitas_negeri_yogyakarta' : 'Universitas Teknologi Yogyakarta',
+        'sman_1_teladan_yogyakarta' : 'SMAN 1 Teladan Yogyakarta',
+        'rs_panti_nugroho' : 'Rumah Sakit Panti Nugroho',
+        'galeria_mall' : 'Galeria Mall',
+        'rumah_sakit_jogja_international_hospital' : 'Rumah Sakit Jogja International Hospital',	
+        'universitas_kristen_duta_wacana' : 'Universitas Kristen Duta Wacana',
+        'stasiun_tugu' : 'Stasiun Tugu',
+        'institut_sains_dan_teknologi_akprind' : 'Institut Sains dan Teknologi Akprind',	
+        'tugu_yogyakarta' : 'Tugu Yogyakarta',
+        'universitas_aisyiyah' : 'Univesitas Aisyiyah',
+        'universitas_atmajaya_yogyakarta' : 'Universitas Atmajaya Yogyakarta',
+        'rs_sardjito_yogyakarta' : 'Rumah Sakit Sardjito Yogyakarta',
+        'sman_6_yogyakarta' : 'SMAN 6 Yogyakarta',
+        'stmik_amikom_yogyakarta' : 'Stmik Amikom Yogyakarta',
+        'universitas_islam_negeri_sunan_kalijaga' : 'Universitas Islam Negeri Sunan Kalijaga',
+        'gereja_saint_francis_xaverius_yogyakarta' : 'Gereja Saint Francis Xaverius Yogyakarta',
+        'sahid_j_walk' : 'Sahid J Walk',
+        'rumah_sakit_panti_rapih' : 'Rumah Sakit Panti Rapih',
+        'universitas_sanata_dharma_yogyakarta' : 'Universitas Sanata Dharma Yogyakarta',
+        'sman_3_yogyakarta' : 'SMA 3 Yogyakarta'}
+        with st.expander('Sekitar Lokasi'):
+            num_columns = 3  # Jumlah kolom yang diinginkan
+            cols = st.columns(num_columns)
+            i = 0
+            for i, col in enumerate(filtered_columns):
+                nama = nama_deskriptif.get(col, col)
+                if 'Y' in selected_city[col].unique():
+                    fitur_2_list[col] = cols[i % num_columns].checkbox(nama, value=False, key=f"{col}_{i}")
+                    i += 1                
+                else:
+                    fitur_2_list[col] = 'N'
         if st.button('Submit'):
             st.write('')
             st.write('')
@@ -239,16 +296,20 @@ def predict():
                         mapping[dek], mapping[area_hiburan_outdoor], mapping[pagar_penuh],
                         mapping[taman],mapping[keamanan_24_jam],mapping[taman_bermain_anak]
                     ]
-                    fitur_2 = [
-                        mapping[malioboro],mapping[masjid_jogokariyan],mapping[malioboro_mall],mapping[universitas_ahmad_dahlan],
-                        mapping[terminal_giwangan],mapping[universitas_gadjah_mada],mapping[universitas_sarjanawiyata_tamansiswa],mapping[universitas_pembangunan_nasional_veteran_yogyakarta],	
-                        mapping[lippo_plaza_jogja],mapping[masjid_gedhe_kauman],mapping[sleman_city_hall],mapping[institut_seni_indonesia_yogyakarta],
-                        mapping[sekolah_tinggi_teknologi_adisutjipto],mapping[universitas_jenderal_achmad_yani],mapping[universitas_tidar],mapping[jogja_city_mall],
-                        mapping[ambarrukmo_plaza],mapping[universitas_muhammadiyah_yogyakarta],mapping[monumen_jogja_kembali],mapping[stasiun_yogyakarta],mapping[universitas_islam_indonesia],	
-                        mapping[universitas_teknologi_yogyakarta],mapping[universitas_negeri_yogyakarta],mapping[sman_1_teladan_yogyakarta],mapping[rs_panti_nugroho],mapping[galeria_mall],mapping[rumah_sakit_jogja_international_hospital],	
-                        mapping[universitas_kristen_duta_wacana],mapping[stasiun_tugu],mapping[institut_sains_dan_teknologi_akprind],mapping[tugu_yogyakarta],mapping[universitas_aisyiyah],mapping[universitas_atmajaya_yogyakarta],
-                        mapping[rs_sardjito_yogyakarta],mapping[sman_6_yogyakarta],mapping[stmik_amikom_yogyakarta],mapping[universitas_islam_negeri_sunan_kalijaga],mapping[gereja_saint_francis_xaverius_yogyakarta],
-                        mapping[sahid_j_walk],mapping[rumah_sakit_panti_rapih],mapping[universitas_sanata_dharma_yogyakarta],mapping[sman_3_yogyakarta]]	
+                    for col, value in fitur_2_list.items():
+                        if value == 'N':
+                            fitur_2_list[col] = 0
+                    fitur_2 = list(fitur_2_list.values())
+                    # fitur_2 = [
+                    #     mapping[malioboro],mapping[masjid_jogokariyan],mapping[malioboro_mall],mapping[universitas_ahmad_dahlan],
+                    #     mapping[terminal_giwangan],mapping[universitas_gadjah_mada],mapping[universitas_sarjanawiyata_tamansiswa],mapping[universitas_pembangunan_nasional_veteran_yogyakarta],	
+                    #     mapping[lippo_plaza_jogja],mapping[masjid_gedhe_kauman],mapping[sleman_city_hall],mapping[institut_seni_indonesia_yogyakarta],
+                    #     mapping[sekolah_tinggi_teknologi_adisutjipto],mapping[universitas_jenderal_achmad_yani],mapping[universitas_tidar],mapping[jogja_city_mall],
+                    #     mapping[ambarrukmo_plaza],mapping[universitas_muhammadiyah_yogyakarta],mapping[monumen_jogja_kembali],mapping[stasiun_yogyakarta],mapping[universitas_islam_indonesia],	
+                    #     mapping[universitas_teknologi_yogyakarta],mapping[universitas_negeri_yogyakarta],mapping[sman_1_teladan_yogyakarta],mapping[rs_panti_nugroho],mapping[galeria_mall],mapping[rumah_sakit_jogja_international_hospital],	
+                    #     mapping[universitas_kristen_duta_wacana],mapping[stasiun_tugu],mapping[institut_sains_dan_teknologi_akprind],mapping[tugu_yogyakarta],mapping[universitas_aisyiyah],mapping[universitas_atmajaya_yogyakarta],
+                    #     mapping[rs_sardjito_yogyakarta],mapping[sman_6_yogyakarta],mapping[stmik_amikom_yogyakarta],mapping[universitas_islam_negeri_sunan_kalijaga],mapping[gereja_saint_francis_xaverius_yogyakarta],
+                    #     mapping[sahid_j_walk],mapping[rumah_sakit_panti_rapih],mapping[universitas_sanata_dharma_yogyakarta],mapping[sman_3_yogyakarta]]	
                     col1,col2 = st.columns(2)
                     with col1:
                         st.warning(f'Kamar Tidur: {kamar_tidur}')
@@ -273,16 +334,20 @@ def predict():
                     mapping[dek], mapping[area_hiburan_outdoor], mapping[pagar_penuh],
                     mapping[taman],mapping[keamanan_24_jam],mapping[taman_bermain_anak]
                 ]
-                fitur_2 = [
-                    mapping[malioboro],mapping[masjid_jogokariyan],mapping[malioboro_mall],mapping[universitas_ahmad_dahlan],
-                    mapping[terminal_giwangan],mapping[universitas_gadjah_mada],mapping[universitas_sarjanawiyata_tamansiswa],mapping[universitas_pembangunan_nasional_veteran_yogyakarta],	
-                    mapping[lippo_plaza_jogja],mapping[masjid_gedhe_kauman],mapping[sleman_city_hall],mapping[institut_seni_indonesia_yogyakarta],
-                    mapping[sekolah_tinggi_teknologi_adisutjipto],mapping[universitas_jenderal_achmad_yani],mapping[universitas_tidar],mapping[jogja_city_mall],
-                    mapping[ambarrukmo_plaza],mapping[universitas_muhammadiyah_yogyakarta],mapping[monumen_jogja_kembali],mapping[stasiun_yogyakarta],mapping[universitas_islam_indonesia],	
-                    mapping[universitas_teknologi_yogyakarta],mapping[universitas_negeri_yogyakarta],mapping[sman_1_teladan_yogyakarta],mapping[rs_panti_nugroho],mapping[galeria_mall],mapping[rumah_sakit_jogja_international_hospital],	
-                    mapping[universitas_kristen_duta_wacana],mapping[stasiun_tugu],mapping[institut_sains_dan_teknologi_akprind],mapping[tugu_yogyakarta],mapping[universitas_aisyiyah],mapping[universitas_atmajaya_yogyakarta],
-                    mapping[rs_sardjito_yogyakarta],mapping[sman_6_yogyakarta],mapping[stmik_amikom_yogyakarta],mapping[universitas_islam_negeri_sunan_kalijaga],mapping[gereja_saint_francis_xaverius_yogyakarta],
-                    mapping[sahid_j_walk],mapping[rumah_sakit_panti_rapih],mapping[universitas_sanata_dharma_yogyakarta],mapping[sman_3_yogyakarta]]	
+                for col, value in fitur_2_list.items():
+                    if value == 'N':
+                        fitur_2_list[col] = 0
+                fitur_2 = list(fitur_2_list.values())
+                # fitur_2 = [
+                #     mapping[malioboro],mapping[masjid_jogokariyan],mapping[malioboro_mall],mapping[universitas_ahmad_dahlan],
+                #     mapping[terminal_giwangan],mapping[universitas_gadjah_mada],mapping[universitas_sarjanawiyata_tamansiswa],mapping[universitas_pembangunan_nasional_veteran_yogyakarta],	
+                #     mapping[lippo_plaza_jogja],mapping[masjid_gedhe_kauman],mapping[sleman_city_hall],mapping[institut_seni_indonesia_yogyakarta],
+                #     mapping[sekolah_tinggi_teknologi_adisutjipto],mapping[universitas_jenderal_achmad_yani],mapping[universitas_tidar],mapping[jogja_city_mall],
+                #     mapping[ambarrukmo_plaza],mapping[universitas_muhammadiyah_yogyakarta],mapping[monumen_jogja_kembali],mapping[stasiun_yogyakarta],mapping[universitas_islam_indonesia],	
+                #     mapping[universitas_teknologi_yogyakarta],mapping[universitas_negeri_yogyakarta],mapping[sman_1_teladan_yogyakarta],mapping[rs_panti_nugroho],mapping[galeria_mall],mapping[rumah_sakit_jogja_international_hospital],	
+                #     mapping[universitas_kristen_duta_wacana],mapping[stasiun_tugu],mapping[institut_sains_dan_teknologi_akprind],mapping[tugu_yogyakarta],mapping[universitas_aisyiyah],mapping[universitas_atmajaya_yogyakarta],
+                #     mapping[rs_sardjito_yogyakarta],mapping[sman_6_yogyakarta],mapping[stmik_amikom_yogyakarta],mapping[universitas_islam_negeri_sunan_kalijaga],mapping[gereja_saint_francis_xaverius_yogyakarta],
+                #     mapping[sahid_j_walk],mapping[rumah_sakit_panti_rapih],mapping[universitas_sanata_dharma_yogyakarta],mapping[sman_3_yogyakarta]]	
                 
                 features = [[kamar_tidur, bangunan, lahan, kamar_mandi,latitude,longitude ] + fitur_1 + fitur_2]
                 predict_house1 = model_prediksi.predict(features)
