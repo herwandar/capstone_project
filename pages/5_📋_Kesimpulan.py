@@ -27,5 +27,5 @@ st.write("""Pengumpulan data dilakukan dengan metode web scraping menggunakan Oc
             dengan mengurutkan dari yang terbaru sampai yang terlama dan scrapping dari page 1 sampai 50 dengan filter rumah yang dijual""")
 st.write("""
                 untuk pengembangangan : \n 
-            1. Gunakan dataset yang mendetail seperti kelengkapan surat,dekat dengan tempat wisata,akses ke jalan raya,fasilitas,dan sebagainya, serta alamat yang lebisubheader banyak agar bisa memprediksi di sebuah alamat dari lokasi yang dipilih 
+            1. Gunakan dataset yang mendetail seperti kelengkapan surat,dekat dengan tempat wisata,akses ke jalan raya,fasilitas,dan sebagainya, serta alamat yang lebih banyak agar bisa memprediksi di sebuah alamat dari lokasi yang dipilih 
             2. Untuk model prediksi rumah masih perlu banyak pengembangan""")
