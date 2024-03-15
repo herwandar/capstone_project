@@ -225,7 +225,7 @@ def predict():
         'masjid_jogokariyan': 'Masjid Jogokariyan',
         'malioboro_mall': 'Malioboro Mall',
         'universitas_ahmad_dahlan' : 'Universitas Ahmad Dahlan',	
-        'terminal_giwangan' : 'Termonal Giwangan',	
+        'terminal_giwangan' : 'Terminal Giwangan',	
         'universitas_gadjah_mada' : 'Universitas Gadjah Mada',
         'universitas_sarjanawiyata_tamansiswa':'Univesitas Sarjanawiyata Tamansiswa',
         'universitas_pembangunan_nasional_veteran_yogyakarta' : 'Universitas Pembangunan Nasional Veteran Yogyakarta',
