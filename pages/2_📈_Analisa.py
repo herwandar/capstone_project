@@ -364,21 +364,21 @@ with tab7:
     st.subheader('Fitur Yang Ada Dalam Pembelian Rumah')
     gambar1 = 'gambar/pie.png'
     image1 = Image.open(gambar1)
-    st.image(image1,use_column_width=True)
+    st.image(image1,use_container_width=True)
     st.write('Mayoritas tidak menampilkan fitur yang ada hanya sebagian saja')
     st.write('')
     st.write('')
     st.subheader('Sekitar Lokasi Rumah Yang Di Jual')
     gambar2 = 'gambar/lokasi.png'
     image2 = Image.open(gambar2)
-    st.image(image2,use_column_width=True)
+    st.image(image2,use_container_width=True)
     st.write('Untuk sekitar lokasi ada mayoritas dekat keramaian dan tempat umum')
     st.write('')
     st.write('')
     st.subheader('Heatmap')
     gambar3 = 'gambar/heatmap.png'
     image3 = Image.open(gambar3)
-    st.image(image3,use_column_width=True)
+    st.image(image3,use_container_width=True)
     st.write("""Korelasi harga dan kamar mandi,kamar tidur,bangunan dan lahan positif
              tetapi untuk korelasi harga dan kamar mandi beserta kamar tidur positif lemah jadi semakin harga mahal kenaikan tidak signifikan
              unruk harga dan lahan berserta bangunan positif kuat jadi semakin mahal harga kenaikan signifikan""")
